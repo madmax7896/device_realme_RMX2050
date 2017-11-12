@@ -1,3 +1,5 @@
+import /system/etc/init/init.safailnet.rc
+
 on init
     mount none /system/etc/fstab.default /vendor/etc/fstab.default bind
     mount none /system/etc/fstab.at.qcom /vendor/etc/fstab.at.qcom bind
