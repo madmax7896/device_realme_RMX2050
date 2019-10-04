@@ -32,6 +32,7 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
+    init.oppo.fingerprint.rc \
     init.qcom.rc
 
 # Display
@@ -49,7 +50,8 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.RMX2050
+    android.hardware.biometrics.fingerprint@2.1-service.RMX2050 \
+    vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 # FM
 PRODUCT_PACKAGES += \
