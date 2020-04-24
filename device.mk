@@ -136,6 +136,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# WiFi
+PRODUCT_PACKAGES += \
+    WifiOverlay
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
