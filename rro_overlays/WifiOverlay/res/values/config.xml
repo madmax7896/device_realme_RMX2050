@@ -41,7 +41,47 @@
     <!-- Wifi driver supports IEEE80211AC for softap -->
     <bool name="config_wifi_softap_ieee80211ac_supported">true</bool>
 
-    <!-- Boolean indicating whether single radio chain scan results are to be used for network selection -->
-    <bool translatable="false" name="config_wifi_framework_use_single_radio_chain_scan_results_network_selection">false</bool>
-</resources>
+    <bool name="config_vendorWifi11axReadySupport">true</bool>
 
+    <bool name="config_vendor_wifi_softap_owe_supported">true</bool>
+
+    <bool name="config_wifiSoftap6ghzSupported">true</bool>
+
+    <bool name="config_wifiSoftapAcsIncludeDfs">true</bool>
+
+    <bool name="config_wifi_batched_scan_supported">true</bool>
+
+    <bool name="config_wifi_dual_sap_mode_enabled">true</bool>
+
+    <bool name="config_wifi_only_link_same_credential_configurations">false</bool>
+
+    <bool name="config_wifi_report_he_ready">true</bool>
+
+    <bool name="config_wifi_softap_sae_supported">true</bool>
+
+    <integer name="config_wifiHardwareSoftapMaxClientCount">32</integer>
+
+    <array name="config_wifiConnectedScanIntervalScheduleSec">
+        <item>86400</item>
+    </array>
+    <array name="config_wifiDisconnectedScanIntervalScheduleSec">
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </array>
+    <array name="config_wifiRssiLevelThresholds">
+        <item>-93</item>
+        <item>-82</item>
+        <item>-74</item>
+        <item>-64</item>
+    </array>
+
+</resources>
