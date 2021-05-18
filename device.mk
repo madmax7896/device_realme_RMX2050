@@ -119,6 +119,13 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+# Parts
+PRODUCT_PACKAGES += \
+    RealmeParts
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/cabc.rc
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
