@@ -1,0 +1,27 @@
+#<src>                                                 <mnt_point>            <type>  <mnt_flags and options>                            <fs_mgr_flags>
+#ifdef OPLUS_FEATURE_STORAGE_MOUNT
+#Haoran.Zhang@PSW.TECH.Euclid.2221709, 2019/08/05, Modify for enable super partition
+odm                                                  /odm                   ext4    ro,barrier=1                                            wait,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey,nofail
+#other mount
+#todo
+my_product         /mnt/vendor/my_product   ext4       ro,barrier=1  wait,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey,nofail
+my_engineering     /mnt/vendor/my_engineering ext4     ro,barrier=1  wait,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey,nofail
+my_company         /mnt/vendor/my_company   ext4       ro,barrier=1  wait,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey,nofail
+my_carrier        /mnt/vendor/my_carrier  ext4    ro,barrier=1  wait,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey,nofail
+my_region         /mnt/vendor/my_region   ext4    ro,barrier=1  wait,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey,nofail
+my_manifest        /mnt/vendor/my_manifest  ext4    ro,barrier=1  wait,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey,nofail
+###
+/mnt/vendor/my_product    /my_product       none     ro,bind       wait,nofail,first_stage_mount,nofail
+/mnt/vendor/my_engineering /my_engineering  none     ro,bind       wait,nofail,first_stage_mount,nofail
+/mnt/vendor/my_company    /my_company       none     ro,bind       wait,nofail,first_stage_mount,nofail
+/mnt/vendor/my_carrier    /my_carrier     none     ro,bind       wait,nofail,first_stage_mount,nofail
+/mnt/vendor/my_region    /my_region       none     ro,bind       wait,nofail,first_stage_mount,nofail
+/mnt/vendor/my_manifest    /my_manifest       none     ro,bind       wait,nofail,first_stage_mount,nofail
+#endif
+
+#ifdef OPLUS_FEATURE_STORAGE
+#Runsheng.Pei@ANDROID.STORAGE.0, 2017/12/29, Add for new reserve partition
+/dev/block/by-name/opporeserve2      /mnt/vendor/opporeserve             ext4   nosuid,nodev,noatime,barrier=1                           wait,check,first_stage_mount,nofail
+#endif
+/dev/block/bootdevice/by-name/custom                    /my_custom           ext4    ro,barrier=1,discard    wait
+
