@@ -9,6 +9,8 @@ on init
     mount none /system/etc/default_volume_tables.xml /vendor/etc/default_volume_tables.xml bind
 
 on post-fs-data
+    mount none /vendor/lost+found /vendor/overlay bind
+
     #Processgroup
     chown system system /acct/uid_*
     chmod 0777 /acct/uid_*
