@@ -55,6 +55,10 @@ debug.sf.latch_unsignaled=1
 ro.vendor.display.ad=1
 ro.vendor.display.sensortype=2
 
+# Enable blurs
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1
+
 # Sf
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.late.sf.duration=10500000
