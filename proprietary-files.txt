@@ -86,6 +86,9 @@ system_ext/lib64/libdpmfdmgr.so
 system_ext/lib64/libdpmtcm.so
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 
+# DPM - from oneplus8 - qssi-user-11-RP1A.201005.001-2009051300-release-keys
+system_ext/lib64/libdpmframework.so|67ebd736333ae7158632735e3db06a4f9664f6a6
+
 # FM
 system_ext/lib/fm_helium.so
 system_ext/lib/libfm-hci.so
