@@ -7,3 +7,8 @@ on init
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
     mount none /system/etc/audio_policy_volumes.xml /vendor/etc/audio_policy_volumes.xml bind
     mount none /system/etc/default_volume_tables.xml /vendor/etc/default_volume_tables.xml bind
+
+on post-fs-data
+    #Processgroup
+    chown system system /acct/uid_*
+    chmod 0777 /acct/uid_*
