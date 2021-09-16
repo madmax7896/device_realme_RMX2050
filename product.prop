@@ -1,0 +1,2 @@
+# Override Display Density
+ro.sf.lcd_density=320
