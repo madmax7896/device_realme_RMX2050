@@ -15,3 +15,7 @@ on post-fs-data
 
 on property:init.svc.face_hal=restarting
     stop face_hal
+
+on property:persist.sys.device_provisioned=1
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,7
+    setprop dalvik.vm.dex2oat-threads 6
