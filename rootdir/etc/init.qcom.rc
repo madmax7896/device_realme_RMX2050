@@ -12,3 +12,6 @@ on post-fs-data
     #Processgroup
     chown system system /acct/uid_*
     chmod 0777 /acct/uid_*
+
+on property:init.svc.face_hal=restarting
+    stop face_hal
