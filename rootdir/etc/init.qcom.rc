@@ -21,3 +21,9 @@ on property:init.svc.face_hal=restarting
 on property:persist.sys.device_provisioned=1
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,7
     setprop dalvik.vm.dex2oat-threads 6
+
+on property:init.svc.cnss_diag=running
+    stop cnss_diag
+
+on property:init.svc.vendor.ipacm-diag=running
+    stop vendor.ipacm-diag
