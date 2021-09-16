@@ -81,6 +81,9 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 # Netflix custom property
 ro.netflix.bsp_rev=Q8250-19134-1
 
+# Privapp permissions whitelisting
+ro.control_privapp_permissions=log
+
 # Qcom
 ro.vendor.qti.va_aosp.support=1
 
