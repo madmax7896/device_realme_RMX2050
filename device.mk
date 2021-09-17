@@ -1,3 +1,6 @@
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_TARGET_VNDK_VERSION := 30
