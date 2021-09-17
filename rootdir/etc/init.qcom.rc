@@ -27,3 +27,12 @@ on property:init.svc.cnss_diag=running
 
 on property:init.svc.vendor.ipacm-diag=running
     stop vendor.ipacm-diag
+
+on property:gsm.version.baseband=*
+    start set_baseband
+
+service set_baseband /product/bin/init.set_baseband.sh
+    class late_start
+    user system
+    group system
+    oneshot

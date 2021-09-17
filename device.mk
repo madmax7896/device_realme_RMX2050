@@ -41,6 +41,9 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.safailnet.rc
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/bin/init.set_baseband.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/init.set_baseband.sh
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
