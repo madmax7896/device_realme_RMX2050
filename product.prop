@@ -1,2 +1,5 @@
 # Override Display Density
 ro.sf.lcd_density=320
+
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
