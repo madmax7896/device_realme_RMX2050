@@ -109,6 +109,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:system/etc/permissions/android.hardware.telephony.ims.xml
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.RMX2050
+
 # Ril
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4
